@@ -1,6 +1,7 @@
 .section__title {
-    margin-top: 0;
-    margin-bottom: 50px;
+
+    // margin-top: 0;
+    // margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -11,7 +12,7 @@
 }
 
 .client__list {
-    display: flex;
+    // display: flex;
     gap: 30px;
 
     transition-duration: 250ms;
@@ -31,7 +32,7 @@
 }
 
 .client__link {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
