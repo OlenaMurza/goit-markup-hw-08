@@ -1,0 +1,56 @@
+.button {
+    width: 216px;
+    min-height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+
+    cursor: pointer;
+    background-color: #2196f3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: inherit;
+    border-radius: 4px;
+    text-align: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+    background-color: #188ce8;
+}
+
+.button,
+.text-button {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+}
+
+
+.subscription-footer__button {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 10px 29px;
+    gap: 10px;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.subscription-icon {
+    fill: #fff;
+    margin-left: 10px;
+}

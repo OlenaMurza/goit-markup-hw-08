@@ -1,0 +1,119 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.contact-footer {
+    display: inline;
+}
+
+.addres {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer__list .social-link-footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: #2196F3;
+    }
+
+    &:focus {
+        color: #FFFFFF;
+    }
+
+}
+
+.container__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact__footer {
+    margin-right: 70px;
+}
+
+
+.footer__content {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.subscription-footer {
+    display: inline-block;
+
+}
+
+.subscription-footer__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.subscription-footer__label {
+    margin-right: 12px;
+}
+
+.subscription-footer__mail {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
