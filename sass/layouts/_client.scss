@@ -1,18 +1,28 @@
 .section__title {
-
+    color: #212121;
+    font-weight: 700;
+    text-align: center;
     // margin-top: 0;
     // margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    @media screen and (min-width: 480px), (min-width: 768px) {
+    padding: 60px 0;
+    font-size: 28px;
+    line-height: 1,17;
     letter-spacing: 0.03em;
-    color: #212121;
-    text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    }
+
+   
 }
 
 .client__list {
-    // display: flex;
+    display: flex;
     gap: 30px;
 
     transition-duration: 250ms;
@@ -32,7 +42,7 @@
 }
 
 .client__link {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
