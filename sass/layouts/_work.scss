@@ -1,6 +1,11 @@
 .work {
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+  
     padding-top: 0;
-}
+    }
 
 .work__title {
     margin-top: 0;

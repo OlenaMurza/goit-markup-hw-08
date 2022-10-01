@@ -19,12 +19,12 @@
  }
 
 .client__list {
-    display: flex;
-    flex-direction: row-reverse;
-     gap: 30px;
+  
 
-    @media screen and (min-width:480) {
-        
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     @media screen and (min-width:1200px) {

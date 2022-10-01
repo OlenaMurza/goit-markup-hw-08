@@ -1,8 +1,11 @@
  .project__list {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 30px;
- }
+    gap: 30px;
+
+    @media screen and (min-width: 768px), (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+         }
+}
 
  .project-thumb {
      position: relative;
@@ -38,7 +41,20 @@
  }
 
  .project__item {
-     width: 370px;
+  
+    @media screen and (min-width:480px) {
+       width: 450px;
+    }
+
+@media screen and (min-width:768px) {
+    width: 354px;
+    display: flex;
+}
+
+    @media screen and (min-width: 1200px) {
+    width: 370px;
+    }
+   
  }
 
  .project__item:hover .overlay {
@@ -46,10 +62,19 @@
  }
 
  .project__link {
-     display: block;
-     text-decoration: none;
+    text-decoration: none;
+    gap: 30px;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 
-
+    @media screen and (min-width: 1200px) {
+        display: block;
+       
+    }
+    
      transition-property: box-shadow;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,6 +100,7 @@
      padding-right: 24px;
      padding-left: 24px;
      padding-bottom: 20px;
+     flex-grow: 1;
 
      border: 1px solid #EEEEEE;
      border-top: 0;
