@@ -41,7 +41,7 @@ width: 768px;
 
  @media screen and (min-width:768px) {
 //  margin-right: 168px;
-    display: block;
+    display: inline-block;
 }
 
     @media screen and (min-width: 1200px) {
@@ -197,6 +197,6 @@ width: 768px;
     }
 
     @media screen and (min-width:768px) {
-             display: inline-block;
+             display: inline-flex;
          }
 }

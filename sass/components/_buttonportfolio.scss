@@ -11,13 +11,21 @@
 
 
 .filter-button__list {
-    @media screen and (min-width:480px) {
-        display: inline-flex;
-    }
-    display: flex;
     gap: 8px;
+
+    @media screen and (min-width:480px) {
+        display: flex;
+      
+    }
+    
+    @media screen and (min-width:768px), (min-width: 1200px) {
+        
+    display: flex;
+    align-items: center;
+    text-align:initial;
     justify-content: center;
     margin-bottom: 50px;
+}
     
 }
 

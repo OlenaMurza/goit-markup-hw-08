@@ -1278,6 +1278,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .social-footer {
     margin: 0;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1409,7 +1410,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .contact__footer {
-    display: block;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1536,7 +1537,9 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .subscription-footer__mail {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -1554,20 +1557,28 @@ textarea {
 }
 
 .filter-button__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
 }
 @media screen and (min-width: 480px) {
   .filter-button__list {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px), (min-width: 1200px) {
+  .filter-button__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: initial;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1600,6 +1611,11 @@ textarea {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 .menu-container {
   display: none;
   position: absolute;
