@@ -99,7 +99,6 @@ li {
 }
 @media screen and (min-width: 480px) {
   .hero-main {
-    max-width: 480px;
     height: 400;
   }
 }
@@ -1545,15 +1544,6 @@ textarea {
 
 .group {
   padding: 0;
-}
-
-.section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .filter-button__list {
