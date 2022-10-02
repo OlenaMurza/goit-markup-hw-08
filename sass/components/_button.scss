@@ -1,20 +1,25 @@
 .button {
+        width: 200px;
+        min-height: 50px;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+    
+        cursor: pointer;
+        background-color: #2196f3;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-family: inherit;
+        border-radius: 4px;
+        text-align: center;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
     width: 216px;
-    min-height: 50px;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-
-    cursor: pointer;
-    background-color: #2196f3;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-family: inherit;
-    border-radius: 4px;
-    text-align: center;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     }
+    
 }
 
 .button:hover {

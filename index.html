@@ -34,7 +34,16 @@
           <a class="logo" href="/index.html" lang="en"
             >Web<span class="logo__dark">Studio</span></a
           >
-          <ul class="nav__list">
+            <!-- Mobile menu -->
+             <div class="menu-container " id="mobile-menu">
+                  <button class="menu-button is-open" aria-expanded="false" data-menu-button>
+                    <svg width="40px" heigth="40px" aria-label="Перемикач мобільного меню">        
+                    <use class="icon-menu" href="./images/symbol-defs.svg#menu-btn"> </use>
+                    <use class="icon-close" href="./images/symbol-defs.svg#menu-close"></use>
+                  </svg></button>  
+                    
+                        
+            <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="index.html"
                 >Студія</a
@@ -47,8 +56,7 @@
               <a class="nav__link" href="">Контакти</a>
             </li>
           </ul>
-        </nav>
-
+        
         <ul class="header-contact__list">
           <li class="header-contact__item">
             <a class="header-contact__link" href="mailto:info@devstudio.com"
@@ -72,8 +80,20 @@
             >
           </li>
         </ul>
+         </nav>
+
+          <!-- Mobile burger -->
+
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#menu-btn"> </use>
+               <use class="icon-close" href="./images/symbol-defs.svg#menu-close"></use>
+            </svg>
+          </button>
       </div>
-    </header> 
+     
+             </div>
+  </header> 
 
     <!-- MAIN -->
      <main class="main">
@@ -745,9 +765,11 @@
             </svg>
           </button>
         </div>
-      </div>
-    </footer> 
+      
 
     <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <!-- script mobile menu -->
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

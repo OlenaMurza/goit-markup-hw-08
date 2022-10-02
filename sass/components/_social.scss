@@ -41,13 +41,40 @@
 }
 
 .social-footer {
-    margin-right: auto;
+    margin: auto;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        margin: 0;
+        margin-top: 65px;
+    margin-bottom: 102px;
+    }
+
+    @media screen and (min-width:1200px) {
+        
+        margin-top: 65px;
+        margin-bottom: 102px;
+    }
 
 }
 
 .social-footer__list {
     display: flex;
     gap: 10px;
+    
+
+    @media screen and (min-width:480px ), (min-width:768px) {
+        
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        text-align: start;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
 
 .social__item {
