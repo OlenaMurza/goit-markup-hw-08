@@ -41,19 +41,20 @@
 }
 
 .social-footer {
-    margin: auto;
-    margin-bottom: 60px;
 
+    margin: 0;
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;
+    }
+    
     @media screen and (min-width:768px) {
         margin: 0;
-        margin-top: 65px;
-    margin-bottom: 102px;
+     
     }
 
     @media screen and (min-width:1200px) {
         
-        margin-top: 65px;
-        margin-bottom: 102px;
+       margin-right: 93px;
     }
 
 }

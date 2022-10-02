@@ -44,10 +44,12 @@
   
     @media screen and (min-width:480px) {
        width: 450px;
+       margin-bottom: 30px;
     }
 
 @media screen and (min-width:768px) {
     width: 354px;
+    margin-bottom: 0;
     display: flex;
 }
 

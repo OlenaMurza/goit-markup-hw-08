@@ -39,16 +39,16 @@ gap: 30px;
    
     @media screen and (min-width: 768px) {
         width: 354px;
-        height: 224px;
+        // height: 224px;
       
     
-    //   flex-basis: calc ((100%-30px)/2);
+      flex-basis: calc ( ( 100 % - 30 px ) / 2) ;
     }
    
     @media screen and (min-width: 1200px) {
         width: 270px;
-        height: 248px;
-        // flex-basis: calc ((100%-3*30px)/4);
+        // height: 248px;
+        flex-basis: calc ( ( 100 % - 3 * 30 px ) / 4 ) ;
         }
    }
 
@@ -67,7 +67,7 @@ gap: 30px;
     }
 
     @media screen and (min-width:1200px) {
-            width: 270px;
+    width: 270px;
     }
 
 }
@@ -75,7 +75,6 @@ gap: 30px;
 .group__features-icon {
     width: 70px;
     height: 70px;
-
 }
 
 h3 {

@@ -182,13 +182,15 @@ li {
 @media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
-    height: 224px;
+    -ms-flex-preferred-size: calc -20 px/2;
+        flex-basis: calc -20 px/2;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
     width: 270px;
-    height: 248px;
+    -ms-flex-preferred-size: calc -60 px/4;
+        flex-basis: calc -60 px/4;
   }
 }
 
@@ -577,11 +579,13 @@ h3 {
 @media screen and (min-width: 480px) {
   .project__item {
     width: 450px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .project__item {
     width: 354px;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1264,20 +1268,21 @@ textarea {
 }
 
 .social-footer {
-  margin: auto;
-  margin-bottom: 60px;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .social-footer {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .social-footer {
     margin: 0;
-    margin-top: 65px;
-    margin-bottom: 102px;
   }
 }
 @media screen and (min-width: 1200px) {
   .social-footer {
-    margin-top: 65px;
-    margin-bottom: 102px;
+    margin-right: 93px;
   }
 }
 
@@ -1354,6 +1359,10 @@ textarea {
   background-color: #2F303A;
 }
 
+.container__footer {
+  margin: 0;
+  padding: 0;
+}
 @media screen and (min-width: 480px) {
   .container__footer {
     display: inline-block;
@@ -1384,14 +1393,30 @@ textarea {
 }
 
 @media screen and (min-width: 480px) {
-  .contact-footer {
+  .contact__footer {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__footer {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact-footer {
-    display: inline;
+  .contact__footer {
+    display: block;
     text-align: start;
+    margin-right: 70px;
   }
 }
 
@@ -1407,9 +1432,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     margin: 0;
     padding: 0;
   }
@@ -1440,30 +1463,6 @@ textarea {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 480px) {
-  .contact__footer {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contact__footer {
-    margin-right: 168px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact__footer {
-    margin-right: 70px;
-    text-align: start;
-  }
-}
-
 .footer__content {
   margin: 0;
   margin-bottom: 20px;
@@ -1480,16 +1479,9 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .subscription-footer {
-    display: inline-block;
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscription-footer {
-    display: inline-block;
-    margin-top: 72px;
+    display: block;
   }
 }
 
@@ -1537,14 +1529,14 @@ textarea {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 768px) {
-  .subscription-footer__mail {
-    display: block;
-  }
-}
 @media screen and (min-width: 480px) {
   .subscription-footer__mail {
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription-footer__mail {
+    display: inline-block;
   }
 }
 
@@ -1552,11 +1544,10 @@ textarea {
   padding: 0;
 }
 
-.section-container {
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 575px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1572,8 +1563,16 @@ textarea {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .filter-button__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 
 .filter__button {
+  width: 100%;
   padding: 6px 22px;
   border-radius: 4px;
   font-family: inherit;

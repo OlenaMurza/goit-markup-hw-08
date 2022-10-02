@@ -4,21 +4,25 @@
     padding: 0;
 }
 
-.section-container {
+.section {
     display: flex;
-    width: 575px;
     justify-content: center;
 }
 
+
 .filter-button__list {
+    @media screen and (min-width:480px) {
+        display: inline-flex;
+    }
     display: flex;
     gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 .filter__button {
-
+    width: 100%;
     padding: 6px 22px;
     border-radius: 4px;
     font-family: inherit;

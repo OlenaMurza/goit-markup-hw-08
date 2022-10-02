@@ -6,6 +6,8 @@
 }
 
 .container__footer {
+    margin: 0;
+    padding: 0;
 @media screen and (min-width: 480px) {
     display: inline-block;
     align-items: center;
@@ -15,11 +17,9 @@
 }
 
 @media screen and (min-width: 768px) {
-width: 768px;    
+width: 768px;   
+ 
 }
-
-
-
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -28,15 +28,26 @@ width: 768px;
 
 }
 
-.contact-footer {
-@media screen and (min-width:480px) {
-   text-align: center;
+.contact__footer {
+    @media screen and (min-width:480px) {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   margin: 0;
+   margin-bottom: 60px;
+    padding: 0;
    }
 
-  
+ @media screen and (min-width:768px) {
+//  margin-right: 168px;
+    display: block;
+}
+
     @media screen and (min-width: 1200px) {
-    display: inline;
+    display: block;
     text-align: start;
+    margin-right: 70px;
     }
 }
 
@@ -58,7 +69,7 @@ width: 768px;
 
  
    @media screen and (min-width:1200px) {
-   display: flex;
+   display: block;
     margin: 0;
     padding: 0;
    }
@@ -90,26 +101,26 @@ width: 768px;
 
 }
 
-.contact__footer {
+// .contact__footer {
 
 
-@media screen and (min-width:480px) {
-margin-bottom: 60px;
-}
+// @media screen and (min-width:480px) {
+// margin-bottom: 60px;
+// }
 
-    @media screen and (min-width:768px) {
-        margin-right: 168px;
+//     @media screen and (min-width:768px) {
+//         margin-right: 168px;
         
-        align-items:center;
-        justify-content: center;
-        text-align: center;
+//         align-items:center;
+//         justify-content: center;
+//         text-align: center;
 
-    }
-    @media screen and (min-width:1200px) {
-       margin-right: 70px;
-       text-align: start;
-    }
-}
+//     }
+//     @media screen and (min-width:1200px) {
+//        margin-right: 70px;
+//        text-align: start;
+//     }
+// }
 
 
 .footer__content {
@@ -130,15 +141,14 @@ margin-bottom: 60px;
 
 .subscription-footer {
 
-    @media screen and (min-width:768px) {
-        display: inline-block;
-        margin-bottom: 60px;
-    }
+    // @media screen and (min-width:768px) {
+    //     display: block;
+    //     margin-bottom: 60px;
+    // }
 
     @media screen and (min-width: 1200px) {
-        display: inline-block;
-        margin-top: 72px;
-    }
+        display: block;
+     }
 }
 
 .subscription-footer__title {
@@ -164,12 +174,6 @@ margin-bottom: 60px;
 }
 
 .subscription-footer__mail {
-
-    @media screen and (min-width:768px) {
-       display: block;
-       
-    }
-
     width: 358px;
     height: 50px;
     padding: 15px;
@@ -191,4 +195,8 @@ margin-bottom: 60px;
     @media screen and (min-width:480px) {
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width:768px) {
+             display: inline-block;
+         }
 }
