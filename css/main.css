@@ -1412,9 +1412,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .container__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1437,19 +1435,8 @@ textarea {
     padding: 0;
   }
 }
-@media screen and (min-width: 768px) {
-  .contact__footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contact__footer {
-    display: block;
-    text-align: start;
     margin-right: 70px;
   }
 }

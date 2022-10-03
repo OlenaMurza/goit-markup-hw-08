@@ -16,12 +16,13 @@
     
 }
 
+
 @media screen and (min-width: 768px) {
 width: 768px;   
  
 }
     @media screen and (min-width: 1200px) {
-        display: flex;
+        display: inline;
         align-items: baseline;
         width: 1200px;
     }
@@ -39,15 +40,14 @@ width: 768px;
     padding: 0;
    }
 
+
  @media screen and (min-width:768px) {
 //  margin-right: 168px;
-    flex-wrap: wrap;
-    align-items: flex-start;
+   
 }
 
     @media screen and (min-width: 1200px) {
-    display: block;
-    text-align: start;
+      
     margin-right: 70px;
     }
 }
