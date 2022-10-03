@@ -15,16 +15,43 @@
         margin-left: auto;
         margin-right: auto;
         background: #2F303A;
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Fon.jpg);
         background-size: cover;
-    
         box-sizing: border-box;
         text-align: center;
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/price/img_mb-@1x.png);
+       
 
-    @media screen and (min-width: 480px) {
-        // max-width: 480px;
-        height: 400;
-    }
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_mb-@2x.png);
+                    }
+                
+                    // tablet image 
+                    @media screen and (min-width:481px) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_tb-@1x.png);
+                
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_tb-@2x.png);
+                        }
+                    }
+                
+                    @media screen and (min-width:769px) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_ds-@1x.png);
+                
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_ds-@2x.png);
+                        }
+                    }
+
+    // @media screen and (min-width: 480px) {
+    //     // max-width: 480px;
+    //     height: 400;
+    // }
 
     @media screen and(min-width: 768px) {
         max-width: 768px;
@@ -50,6 +77,9 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width:768px) {
+        width: 360px;
+    }
 
 @media screen and (min-width: 1200px) {
         width: 696px;

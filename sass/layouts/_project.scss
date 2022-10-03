@@ -51,7 +51,8 @@
     width: 354px;
     margin-bottom: 0;
     display: flex;
-}
+    
+    }
 
     @media screen and (min-width: 1200px) {
     width: 370px;
@@ -70,7 +71,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
-    }
+         }
 
     @media screen and (min-width: 1200px) {
         display: block;

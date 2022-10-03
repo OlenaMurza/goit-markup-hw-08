@@ -20,11 +20,12 @@
 
 .client__list {
   
+    gap: 30px;
 
     @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        // gap: 30px;
     }
 
     @media screen and (min-width:1200px) {
@@ -45,6 +46,8 @@
 .client__item {
    
     height: 92px;
+
+
     @media screen and (min-width:480px) {
      width: 210px;
     }
