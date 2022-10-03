@@ -3,23 +3,13 @@
     text-align: center;
 }
 
-.header__container {
-    position: relative;
-}
 
-.header__container .nav-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
-}
 
 .header__container,
-.nav__group,
-.nav__list {
+ .nav-group, .nav__list {
     display: flex;
     align-items: center;
-}
+   }
 
 .nav__list {
     gap: 50px;

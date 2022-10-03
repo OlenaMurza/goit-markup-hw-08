@@ -754,26 +754,8 @@ h3 {
   text-align: center;
 }
 
-.header__container {
-  position: relative;
-}
-
-.header__container .nav-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 80px;
-}
-
 .header__container,
-.nav__group,
-.nav__list {
+.nav-group, .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1408,11 +1390,26 @@ textarea {
 @media screen and (min-width: 768px) {
   .container__footer {
     width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__footer {
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1437,6 +1434,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .contact__footer {
+    display: inline;
+    text-align: start;
     margin-right: 70px;
   }
 }
@@ -1453,7 +1452,13 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer__list {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     padding: 0;
   }

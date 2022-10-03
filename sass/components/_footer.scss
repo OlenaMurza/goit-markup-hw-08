@@ -19,10 +19,15 @@
 
 @media screen and (min-width: 768px) {
 width: 768px;   
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: baseline;
+margin: 0;
  
 }
     @media screen and (min-width: 1200px) {
-        display: inline;
+        display: flex;
         align-items: baseline;
         width: 1200px;
     }
@@ -47,8 +52,9 @@ width: 768px;
 }
 
     @media screen and (min-width: 1200px) {
-      
-    margin-right: 70px;
+      display: inline;
+      text-align: start;
+      margin-right: 70px;
     }
 }
 
@@ -71,7 +77,8 @@ width: 768px;
 
  
    @media screen and (min-width:1200px) {
-   display: block;
+   display: flex;
+   flex-direction: column;
     margin: 0;
     padding: 0;
    }
@@ -135,9 +142,11 @@ width: 768px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
-     @media screen and (min-width:1200px) {
+    
+    @media screen and (min-width:1200px) {
         text-align: start;
-     }
+    }
+     
 }
 
 
@@ -164,8 +173,11 @@ width: 768px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 
     color: #FFFFFF;
+
+
 
     @media screen and (min-width:1200px) {
         text-align: start;
