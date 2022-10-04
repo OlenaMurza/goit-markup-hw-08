@@ -30,6 +30,8 @@ gap: 30px;
 }
 
 .features__item {
+
+   
    
     @media screen and (min-width: 480px) {
         width: 450px;
@@ -89,9 +91,11 @@ h3 {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #212121;
-
-@media screen and (max-width: 480px) {
     text-align: center;
+
+@media screen and (min-width: 768px) {
+    text-align: start;
+   
 }
     
 }

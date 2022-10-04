@@ -1,12 +1,13 @@
 .header {
     border-bottom: 1px solid #ECECEC;
     text-align: center;
+
 }
 
 
 
 .header__container,
- .nav-group, .nav__list {
+ .nav__group, .nav__list {
     display: flex;
     align-items: center;
    }
@@ -15,16 +16,42 @@
     gap: 50px;
     margin: 0;
     margin-right: auto;
+
+    @media screen and (max-width:767px) {
+        display:none;
+    }
+
+    @media screen and (min-width:768px), (max-width:1199px) {
+        margin-right: 75px;
+    }
 }
 
 .header-contact__list {
     display: flex;
     gap: 28px;
     padding-left: 0;
-    margin-left: auto;
     justify-content: flex-end;
     color: #757575;
     align-items: center;
+
+    @media screen and (max-width:767px) {
+        display: none;
+        flex-wrap: wrap;
+        }
+
+    @media screen and (max-width:1199px) {
+           
+             justify-content: space-between;
+             flex-wrap: wrap;
+             padding: 20px 0;
+             flex-shrink: 1;
+         }
+      
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: auto;
+    }
+
 }
 
 .nav__link {
@@ -45,6 +72,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 
+    @media screen and (min-width:768px), (max-width:1199px) {
+       margin-right: auto;
+    }
     &:hover,
     &:focus {
         color: #2196f3;
@@ -79,8 +109,6 @@
     display: flex;
     align-content: center;
     gap: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
     justify-content: center;
 
@@ -96,6 +124,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 
+    
+    @media screen and (max-width:767px) {
+            display: none;
+            flex-wrap: wrap;
+            text-align: start;        }
+
+   
+   @media screen and (min-width:1200px) {
+    padding-top: 32px;
+        padding-bottom: 32px;
+   }
     &:hover,
     &:focus {
         color: #2196f3;
@@ -105,13 +144,17 @@
 .header__icon-envelope {
     width: 16px;
     height: 12px;
-
     fill: currentColor;
+    @media screen and (max-width:767px) {
+            display: none;
+        }
 }
 
 .header__icon-smartphone {
     width: 10px;
     height: 16px;
-
     fill: currentColor;
+    @media screen and (max-width:767px) {
+            display: none;
+        }
 }
