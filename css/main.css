@@ -1675,7 +1675,7 @@ textarea {
 .filter-button__list {
   gap: 8px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px), (max-width: 767px) {
   .filter-button__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1688,6 +1688,7 @@ textarea {
 }
 @media screen and (min-width: 768px), (min-width: 1200px) {
   .filter-button__list {
+    max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1699,6 +1700,8 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 50px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 

@@ -13,21 +13,21 @@
 .filter-button__list {
     gap: 8px;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:480px), (max-width:767px) {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 46px;
         max-width: 326px;
-      
     }
     
     @media screen and (min-width:768px), (min-width: 1200px) {
-        
+     max-width: 1200px;
     display: flex;
     align-items: center;
     text-align:initial;
     justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
     
 }
