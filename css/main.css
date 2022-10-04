@@ -66,11 +66,13 @@ li {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -781,6 +783,9 @@ h3 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: #757575;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__link {
@@ -1508,7 +1513,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .subscription-footer {
     display: inline-block;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
