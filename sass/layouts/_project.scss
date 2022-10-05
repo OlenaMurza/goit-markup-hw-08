@@ -1,6 +1,8 @@
  .project__list {
     gap: 30px;
 
+    
+
     @media screen and (min-width: 768px), (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
@@ -68,10 +70,14 @@
     text-decoration: none;
     gap: 30px;
     
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-         }
+
+    @media screen and (min-width:768px),
+        (max-width:1199px) {
+            gap: 0;
+            display: flex;
+                flex-direction: column;
+        }
+   
 
     @media screen and (min-width: 1200px) {
         display: block;
