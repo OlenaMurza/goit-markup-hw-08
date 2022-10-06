@@ -649,6 +649,11 @@ h3 {
   color: #fff;
 }
 
+@media screen and (max-width: 479px) {
+  .project__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .project__item {
     width: 450px;
@@ -1849,12 +1854,12 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   .menu-container {
-    width: 320px;
+    max-width: 320px;
   }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
-    width: 767;
+    width: 767px;
   }
 }
 
