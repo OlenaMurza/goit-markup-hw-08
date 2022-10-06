@@ -138,6 +138,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width:479px) {
+        width: 300px;
+    }
+
     &:hover,
     &:focus {
         border-color: #2196F3;
@@ -183,7 +187,9 @@ textarea {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
        
-    
+    @media screen and (max-width:479px) {
+        width: 300px;
+    }
         @media screen and (min-width: 1200px) {
         width: 448px;
         }

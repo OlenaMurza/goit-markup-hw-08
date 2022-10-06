@@ -106,11 +106,6 @@ li {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/price/img_mb-@2x.png);
   }
 }
-@media screen and (max-width: 480px) {
-  .hero-main {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 481px) {
   .hero-main {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/price/img_tb-@1x.png);
@@ -182,10 +177,8 @@ li {
 }
 
 .features__list {
-  margin-bottom: 30px;
   margin: 0;
   padding: 0;
-  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -216,12 +209,14 @@ li {
 }
 
 .features__item {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .features__item {
     width: 450px;
     height: 226px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -237,6 +232,10 @@ li {
     -ms-flex-preferred-size: calc -60 px/4;
         flex-basis: calc -60 px/4;
   }
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
 }
 
 .group__features {
@@ -1149,6 +1148,11 @@ h3 {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .register-form-group__input {
+    width: 300px;
+  }
+}
 .register-form-group__input:hover, .register-form-group__input:focus {
   border-color: #2196F3;
 }
@@ -1211,6 +1215,11 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-width: 479px) {
+  .register-form-group__message {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .register-form-group__message {
