@@ -41,8 +41,9 @@
 }
 
 .social-footer {
-
+    
     margin: 0;
+    margin-bottom: 60px;
     @media screen and (min-width:480px) {
         margin-bottom: 60px;
     }
@@ -63,7 +64,9 @@
 .social-footer__list {
     display: flex;
     gap: 10px;
-    
+    align-items: center;
+        justify-content: center;
+        text-align: center;
 
     @media screen and (min-width:480px ), (min-width:768px) {
         

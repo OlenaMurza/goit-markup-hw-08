@@ -18,6 +18,9 @@
     }
  }
 
+ .client__container {
+    padding: 60px 0;
+ }
 .client__list {
   
     gap: 30px;
@@ -46,7 +49,10 @@
 .client__item {
    
     height: 92px;
-
+    @media screen and (max-width:479px) {
+        margin-bottom: 30px;
+        &:last-child { margin-bottom: 0;}
+    }
 
     @media screen and (min-width:480px) {
      width: 210px;
@@ -75,6 +81,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width:479px){
+        margin-bottom: 30px;
+
+    }
+
     &:hover,
     &:focus {
         outline: 0;
@@ -83,6 +94,9 @@
     }
 }
 
+.client__link:last-child {
+    margin-bottom: 0;
+}
 .client__icon {
     background-repeat: no-repeat;
     align-content: center;

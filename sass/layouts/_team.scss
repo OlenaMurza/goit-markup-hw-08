@@ -3,9 +3,15 @@
     border-radius: 4px;
 }
 
+.team-container {
+    @media screen and (max-width:479px) {
+       padding: 60px 0;
+    }
+}
 .team__list {
     padding-left: 0;
     gap: 30px;
+
 
     @media screen and (min-width: 768px) {
         display: flex;

@@ -27,7 +27,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     transform: translateY(100%);
+     transform: translateY(105%);
 
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,7 +69,7 @@
  .project__link {
     text-decoration: none;
     gap: 30px;
-    
+    min-width: 320px;
 
     @media screen and (min-width:768px),
         (max-width:1199px) {

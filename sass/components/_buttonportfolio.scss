@@ -13,10 +13,13 @@
 .filter-button__list {
     gap: 8px;
 
+    @media screen and (max-width:479px) {
+        margin-top: 30px;
+    }
     @media screen and (min-width:480px), (max-width:767px) {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 46px;
+        margin-bottom: 40px;
         max-width: 326px;
     }
     

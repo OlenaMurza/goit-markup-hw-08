@@ -8,6 +8,12 @@
 .container__footer {
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width:479px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 @media screen and (min-width: 480px) {
     
     align-items: center;
@@ -50,12 +56,16 @@ justify-content: space-around;
 }
 
 .contact__footer {
+    align-items: center;
+        justify-content: center;
+        text-align: center;
+@media screen and (max-width:479px) {
+    margin-bottom: 60px;
+}
+
     @media screen and (min-width:480px) {
     display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   margin: 0;
+    margin: 0;
    margin-bottom: 60px;
     padding: 0;
    }
@@ -200,9 +210,12 @@ justify-content: space-around;
 }
 
 .subscription-footer__mail {
-    width: 358px;
+    width: 320px;
     height: 50px;
     padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

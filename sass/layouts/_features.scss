@@ -27,16 +27,19 @@ gap: 30px;
 
 .features__item:last-child {
     margin-right: 0;
+    @media screen and (max-width:479px) {
+        margin-bottom: 0;
+    }
 }
 
 .features__item {
 
-   
+   margin-bottom: 30px;
    
     @media screen and (min-width: 480px) {
         width: 450px;
         height: 226px;
-      
+             
    } 
    
     @media screen and (min-width: 768px) {
