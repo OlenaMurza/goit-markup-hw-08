@@ -32,7 +32,7 @@
 
     @media screen and (min-width: 480px) {
         width: 450px;
-        margin-bottom: 30px;
+       
     }
 
     @media screen and (min-width: 768px) {
@@ -45,9 +45,9 @@
        padding: 0;
              }
 }
-.team__item:nth-last-child(-n+3)
+.team__item:not(:last-child)
 {
-    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .team__title {

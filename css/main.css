@@ -410,7 +410,6 @@ h3 {
 @media screen and (min-width: 480px) {
   .team__item {
     width: 450px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -427,8 +426,8 @@ h3 {
   }
 }
 
-.team__item:nth-last-child(-n+3) {
-  gap: 30px;
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__title {
@@ -659,6 +658,8 @@ h3 {
 @media screen and (min-width: 480px) {
   .project__item {
     width: 450px;
+  }
+  .project__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1439,12 +1440,6 @@ textarea {
 
 .social-footer {
   margin: 0;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 480px) {
-  .social-footer {
-    margin-bottom: 60px;
-  }
 }
 @media screen and (min-width: 768px) {
   .social-footer {
@@ -1576,12 +1571,14 @@ textarea {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .combi-list {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .combi-list {
     display: -webkit-box;
@@ -1601,6 +1598,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .combi-list {
     margin: 0;
+    margin-right: auto;
   }
 }
 
@@ -1956,16 +1954,16 @@ textarea {
   margin-bottom: 32px;
 }
 
-.mobile-menu__item:last-child {
-  margin-bottom: 0;
-}
-
 .menu-list {
   margin-bottom: 64px;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .menu-list__tel {
@@ -1997,34 +1995,34 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .mobile-socials__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 5px;
+  position: relative;
 }
+
 .mobile-socials__item:not(:last-child) {
-  border: none;
+  margin-right: 20px;
 }
 
 .mobile-socials__item::after {
   content: "";
-  position: relative;
+  position: absolute;
   display: block;
-  width: 22px;
-  height: 1px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  width: 2px;
+  height: 100%;
+  right: -10px;
   -ms-flex-line-pack: end;
       align-content: flex-end;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-socials__item:last-child::after {
+  content: "";
+  display: none;
 }
 
 .mobile-socials__link {

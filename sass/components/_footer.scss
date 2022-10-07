@@ -34,13 +34,15 @@ width: 768px;
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        justify-content: center;
-    
+          
     }
 
 }
 
 .combi-list {
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width:768px) {
     display: flex;
 margin-left: auto;
@@ -52,6 +54,7 @@ justify-content: space-around;
 }
 @media screen and (min-width:1200px) {
     margin: 0;
+    margin-right: auto;
 }
 }
 

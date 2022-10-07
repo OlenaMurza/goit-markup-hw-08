@@ -86,9 +86,6 @@ color: black;
  .mobile-menu__item {
     margin-bottom: 32px;
  }
-.mobile-menu__item:last-child {
-    margin-bottom: 0;
-}
 
 .menu-list {
 margin-bottom: 64px;
@@ -96,6 +93,10 @@ font-weight: 500;
     font-size: 34px;
     line-height: 40px;
       letter-spacing: 0.02em;
+}
+
+.menu-list__item:not(:last-child) {
+margin-bottom: 30px;
 }
 
 .menu-list__tel {
@@ -125,31 +126,32 @@ font-weight: 500;
 
 .mobile-socials__list {
     display: flex;
-    margin:0;
-    padding: 0;
-        }
-
-        .mobile-socials__item {
-            display: flex;
-            margin-right: 5px;
-
-          &:not(:last-child) {
-                border: none;
-            }
-        }
     
-        .mobile-socials__item::after {
+    }
+
+.mobile-socials__item {
+    display: flex;
+    position: relative;
+}
+.mobile-socials__item:not(:last-child)
+{
+    margin-right: 20px;
+}  
+.mobile-socials__item::after {
             content: "";
-            position: relative;
+            position: absolute;
             display: block;
-            width: 22px;
-            height: 1px;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-            align-items: flex-end;
+            width: 2px;
+            height: 100%;
+            right: -10px;
+            // border: 1px solid rgba(33, 33, 33, 0.2);
             align-content: flex-end;
+            background-color: rgba(33, 33, 33, 0.2);
     
-        }
+}
+.mobile-socials__item:last-child::after {
+            content: ''; 
+       display: none; }
 
 .mobile-socials__link {
     font-weight: 500;
