@@ -16,12 +16,13 @@ padding: 0;
 @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     }
 
     @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
-
+gap: 30px;
        }
    }
 
@@ -38,7 +39,6 @@ margin-top: 30px;
    
     @media screen and (min-width: 480px) {
         width: 450px;
-        height: 226px;
         margin-top: 0;
              
    } 
