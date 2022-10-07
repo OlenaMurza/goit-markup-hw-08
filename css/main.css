@@ -426,8 +426,10 @@ h3 {
   }
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 30px;
+  }
 }
 
 .team__title {
@@ -655,7 +657,7 @@ h3 {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .project__item {
     width: 450px;
   }

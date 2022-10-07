@@ -45,9 +45,10 @@
        padding: 0;
              }
 }
-.team__item:not(:last-child)
+.team__item:last-child
 {
-    margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+    margin-bottom: 30px;}
 }
 
 .team__title {
