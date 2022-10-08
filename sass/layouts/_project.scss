@@ -42,10 +42,13 @@
      color: #fff;
  }
 
+
+ 
  .project__item {
   
     @media screen and (max-width:479px) {
         margin-bottom: 30px;
+        
     }
     @media screen and (max-width:767px) {
        width: 450px;
@@ -72,6 +75,23 @@
  .project__item:hover .overlay {
      transform: translateY(0);
  }
+
+.project__img {
+    @media screen and (max-widt:479px) {
+        width: 100%;
+    }
+
+    @media screen and (min-widtx:480px),
+    (max-width:767px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:768px),
+    (max-width:1199px) {
+        width: 354px;
+    }
+
+}
 
  .project__link {
     text-decoration: none;
@@ -117,7 +137,7 @@
      padding-left: 24px;
      padding-bottom: 20px;
      flex-grow: 1;
-
+    
      border: 1px solid #EEEEEE;
      border-top: 0;
  }
