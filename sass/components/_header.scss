@@ -13,14 +13,18 @@
     
     justify-content: space-between;
 
-    @media screen and (max-width:767px) {
-        width: 100%;
-
-    }
+  
    }
 
 .nav__group {
-      @media screen and (min-width:768px), (max-width:1199px) {            margin-right: 75px; } 
+       
+    @media screen and (max-width:767px) {
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+    }
+   
+      @media screen and (min-width:768px) {  margin-right: 75px; } 
     
       @media screen and (min-width:1200px) {
         margin-right: 0;
@@ -114,9 +118,10 @@
     border-radius: 2px;
     background-color: #2196F3;
 
-    @media screen and (max-width:1199px) {
-        bottom: -14%;
-    }
+  
+    // @media screen and (max-width:1199px) {
+    //     bottom: -3%;
+    // }
 }
 
 .nav__link--current {
